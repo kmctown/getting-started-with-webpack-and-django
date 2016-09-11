@@ -1,0 +1,36 @@
+{
+  "name": "getting-started-with-webpack-and-django",
+  "version": "1.0.0",
+  "description": "Example project for demonstating running webpack with Django.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-react-jsx": "^6.8.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "clean-webpack-plugin": "^0.1.10",
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1",
+    "uuid": "^2.0.2",
+    "webpack": "^1.13.1",
+    "webpack-bundle-tracker": "0.0.93"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "./node_modules/.bin/webpack -d --config webpack.config.js",
+    "dev": "./node_modules/.bin/webpack -d --config webpack.config.js --watch",
+    "prod": "./node_modules/.bin/webpack -p --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kmctown/getting-started-with-webpack-and-django.git"
+  },
+  "author": "Kris Ciccarello",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kmctown/getting-started-with-webpack-and-django/issues"
+  },
+  "homepage": "https://github.com/kmctown/getting-started-with-webpack-and-django#readme"
+}

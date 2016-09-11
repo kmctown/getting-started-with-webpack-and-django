@@ -13,6 +13,9 @@
                 padding-bottom: 20px;
             }
         </style>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        {% block js %}
+        {% endblock js %}
     </head>
     <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -36,22 +39,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <button class="btn btn-primary pull-right">Add a URL</button>
-          <h2 style="margin-top: 0">My Short URLs</h2>
-          <table class="table">
-            <thead>
-              <th>Short URL</th>
-              <th>Real URL</th>
-              <th>Click Count</th>
-              <th>Created</th>
-            </thead>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-          </table>
+          {% include 'short-url-table.html' %}
         </div>
       </div>
 
@@ -61,6 +49,5 @@
         <p>by Kris Ciccarello &bull; <a href="https://twitter.com/kmctown">@kmctown</a></p>
       </footer>
     </div>
-      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     </body>
 </html>

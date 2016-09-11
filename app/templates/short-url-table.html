@@ -1,0 +1,6 @@
+{% load render_bundle from webpack_loader %}
+{% block js %}
+{% render_bundle 'ShortUrls' %}
+{% endblock js %}
+
+<div id="short-urls-app"></div>
